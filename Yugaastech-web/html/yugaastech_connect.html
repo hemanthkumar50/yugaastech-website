@@ -1,0 +1,260 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://kit.fontawesome.com/64d58efce2.js" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" crossorigin="anonymous"></script> 
+    <title>Yugaastech</title>
+    <link rel="stylesheet" href="../css/contact.css">
+</head>
+<style>
+    @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700&display=swap');
+
+
+</style>
+<body>
+  <nav id="navbar">
+    <input type="checkbox" id="check">
+    <label for="check" class="checkbtn">
+        <i class="fas fa-bars"></i>
+      <i class="fa-solid fa-house"></i>
+    </label>
+   
+    <label class="logos">
+        
+        <img src="img/logo.jpg">
+        yugaas<span>tech</span></label>
+    <ul>
+      <li><a href="index.html">Home</a></li>
+      <li><a href="./About_us_yugaas.html">About us</a></li>
+      <li><a href="./Our_services.html">Our services</a></li>
+      <li><a href="#">Careers</a></li>
+      <li><a href="./yugaastech_connect.html">Contact us</a></li>
+      <li><a href="#"><img src="./img/login-bt.png"></a></li>
+     
+    </ul>
+  </nav>
+  <script>
+    window.addEventListener("scroll", () => {
+        const navbar = document.getElementById("navbar");
+        if (window.scrollY > 100) {
+
+            navbar.style.backgroundColor = " rgb(255, 255, 255)";
+        } else {
+            navbar.style.backgroundColor = "";  
+        }
+    });
+</script>
+      <div class="contact">
+        <div class="title-contact">Contact</div>
+        <div class="para-contact">
+            <p>Thank you for your interest in Yugaas Tech! We value your inquiries, feedback, and collaboration opportunities. Feel free to get in touch with us using the following contact information, and we'll be delighted to assist you.</p>
+        </div>
+        <div class="wrap-contact">
+            <div class="contact-details">
+                <ul>
+                  <h1>Contact-Details</h1>
+                <li>Address:[Company address]</li>
+                <li>Phone:[company number]</li>
+                <li>Email:[Company email address]</li>
+              </ul>
+            </div>
+            
+             <div class="contact-para">
+              <p>Stay updated with the latest news, events, and insights from Yugaas Tech by following us on our social media channels</p>
+              <div class="icons-1">
+                <a href="#"><img src="img/facebook (1).png"></a>
+                <a href="#"><img src="img/twitter (1).png"></a>
+                <a href="#"><img src="img/linkedin (2).png"></a>
+                <a href="#"><img src="img/instagram (1).png"></a>
+             </div>
+            </div>
+        </div>
+      </div>
+          
+      <div class="general">
+       
+      
+        <div class="image-g-1">
+          <!-- image -->
+          <div class="in-1">
+              <p><span>General Inquiries:</span>For general inquiries about our services, career opportunities, partnerships, or any other information, please email us at [Your General Inquiry Email Address]. We look forward to hearing from you!
+              </p>
+            </div>
+            <div class="image-i-1">
+              <img src="img/inquiry.jpg">
+            </div>
+            <div class="in-1">
+              <p><span>Career Opportunities:</span> At Yugaas Tech, we are always on the lookout for talented individuals who can contribute to our vision of technological excellence. If you are interested in joining our team, please send your resume and a brief introduction to [Your Career Inquiry Email Address].
+    
+              </p>
+            </div>
+          </div>
+    
+      
+    </div>
+     
+
+      <div class="general">
+        <div class="inquiries">
+          <p><span>Partnerships and Collaborations:</span> We value collaboration and welcome partnerships with like-minded organizations. If you are interested in exploring potential collaborations or have partnership opportunities, please reach out to us at [Your Partnership Inquiry Email Address].
+
+          </p>
+        </div>
+        <div class="g-img-3">
+          <div class="image-g-3">
+            <!-- image -->
+            <div class="com-logo">
+              <img src="#">
+            </div>
+
+            <div class="com-logo">
+              <img src="#">
+            </div>
+
+            <div class="com-logo">
+              <img src="#">
+            </div>
+
+            <div class="com-logo">
+              <img src="#">
+            </div>
+          
+            <!-- <img src="#"> -->
+            </div>
+        </div>
+        
+      </div>
+
+      <div class="general">
+         <div class="inquiries-4">
+          <p><span>Media and Press Inquiries:</span> for media inquiries, press releases, or interview requests, please contact our media relations team at [Your Media Inquiry Email Address]. We are happy to provide you with the information you need.
+
+          </p>
+        </div>
+
+
+       <div class="media-box">
+        <div class="image-g-4">
+          <img src="img/media.jpg">
+          
+           </div>
+
+           <div class="image-g-4">
+             <img src="img/media.jpg">
+             
+              </div>
+
+              <div class="image-g-4">
+               <img src="img/media.jpg">
+               
+                </div>
+       </div>
+          
+        
+      </div>
+     
+      <div class="general">
+        
+       
+          <div class="image-g-5">
+           
+            <div class="inquiries">
+              <p><span> Feedback and Suggestions:</span>  Your feedback is essential to us, as it helps us continuously improve our services. If you have any suggestions, feedback, or comments, please share them with us at [Your Feedback Email Address].
+            </div>
+            </div>
+            
+            <h1>Feedback Form</h1>
+            <form id="feedback-form">
+                <input type="text" id="name" placeholder="Name" name="name" required>
+                
+            
+                <input type="email" id="email" placeholder="Email Id" name="email" required>
+                
+                
+                <textarea id="message" name="message" placeholder="Feedback" rows="4" required></textarea>
+                
+                <button type="submit">Submit</button>
+            </form>
+            <div id="message-container"></div>
+            <script>
+                document.addEventListener("DOMContentLoaded", function () {
+                    const feedbackForm = document.getElementById("feedback-form");
+                    const messageContainer = document.getElementById("message-container");
+        
+                    feedbackForm.addEventListener("submit", function (e) {
+                        e.preventDefault();
+        
+                        // You can add your validation logic here
+        
+                        // Simulating a successful submission
+                        messageContainer.innerText = "Feedback submitted successfully!";
+                        feedbackForm.reset();
+                    });
+                });
+            </script>
+           
+      </div>
+     
+
+
+      <div class="general">
+        <div class="inquiries">
+          <p><span> Data Privacy and Security:</span> At Yugaas Tech, we take data privacy and security seriously. If you have any concerns or questions related to data privacy or wish to exercise your data rights, please contact us at [Your Data Privacy Email Address].
+          </p>
+        </div>
+
+        <div class="image-g-7">
+            <!-- image -->
+            <img src="img/secure.jpg">
+            </div>
+        
+          
+      
+      </div>
+
+      <div class="general">
+        <div class="inquiries">
+          <p><span>Connect with Us:</span> Stay updated with the latest news, events, and insights from Yugaas Tech by following us on our social media channels:
+            [Your Social Media Channels (e.g., Facebook, Twitter, LinkedIn)]
+          </p>
+        </div>
+      
+        <div class="connect_us">
+          <div class="us">
+            <a href="#">Connect with us</a>
+          </div>
+          <div class="connect-logo">
+            <img src="img/connect.jpg">
+          </div>
+        </div>         
+      
+        <div class="time">
+       
+       
+          <div class="image-g-5">
+            <!-- image -->
+            <div class="inquiries-5">
+              <p><span>Office Hours:</span> Our team is available to assist you during our regular office hours: [Your Office Hours]
+                We value your time and will make every effort to respond promptly to your inquiries. Thank you for considering Yugaas Tech, and we are excited to engage with you!
+                
+              </p>
+              <div class="moto">
+                <p>Your Success, Our Priority. Reach out to Yugaas Tech Today!
+                </p>
+              </div>
+            </div>
+            </div>
+        
+      </div>
+     
+        
+    
+             
+
+
+</body>
+</html>
+

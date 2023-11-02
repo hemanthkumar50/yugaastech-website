@@ -1,0 +1,534 @@
+
+*{
+  padding: 0;
+  margin: 0;
+  /* font-family: "Poppins" , sans-serif; */
+  text-decoration: none;
+  list-style: none;
+  box-sizing: border-box;
+}
+body{
+   /* background: black; */
+   font-family: Kumar One;
+  
+}
+nav{
+   position: fixed;
+   /* background:rgb(141, 140, 134);  */
+   /* background: rgb(255, 255, 255); */
+   height: 70px;
+   width: 100%;
+   animation: nav 2s ease-in-out;
+   z-index: 999;
+}
+
+nav label img{
+  position: relative;
+  top:15px;
+  margin: 0px 3px;
+  border-radius: 100%;
+  width:7vh;
+  height:7vh; 
+}
+@keyframes nav{
+  0%{
+    opacity: 0;
+    transform: translateY(-100%);
+  }
+}
+
+
+.logos{
+  color: #1445F2;
+  font-family: Kumar One;
+  position: fixed;
+  font-size: 30px;
+  padding: 0 20px;
+  font-weight:600;
+}
+.logos span{
+  color: #FFA500;
+  font-size: 30px;
+ 
+}
+
+nav ul{
+  font-weight: 300;
+  float: right;
+  margin-right: 20px;
+  margin-top: 1px;
+ 
+}
+nav ul li{
+  display: inline-block;
+  margin: 0px 30px;
+  position: relative;
+  bottom: 15px;
+}
+nav ul li a{
+  font-family: Kumar One;
+  color: #FFA500;
+  font-size: 18px;
+  padding: 0.6px 1px;
+  border-radius: 3px;
+  font-weight: 400;
+ 
+}
+nav ul li a:hover{
+  color:rgba(20, 69, 242, 1);
+  
+  
+}
+nav ul li a img{
+    position: relative;
+    top:20px;
+    padding: 1px 1px;
+    width:9vh;
+    height:9vh;
+}
+
+
+/* a.active,a:hover{
+
+  transition: .5s;
+} */
+.checkbtn{
+  font-size: 25px;
+  position: relative;
+  top:20px;
+  color:rgba(255, 165, 0, 1);
+  float: right;
+  line-height: 60px;
+  margin-right: 40px;
+  cursor: pointer;
+  display: none;
+}
+#check{
+  display: none;
+}
+@media (max-width: 952px){
+   
+  nav ul li a{
+    font-size: 16px;
+  }
+}
+@media (max-width: 858px){
+nav{
+  height:80px;
+}
+  .checkbtn{
+    display: block;
+  }
+  label.logo{
+    font-size: 25px;
+    padding-left: 50px;
+  }
+  ul{
+    position: fixed;
+    width: 70%;
+    height: 100vh;
+    background:white;
+    left: -100%;
+    text-align: center;
+    transition: all .5s;
+    z-index: 999;
+  }
+  nav ul li{
+    display: block;
+    margin: 50px 0;
+    line-height: 30px;
+  }
+  nav ul li a{
+
+    padding: 10px 10px;
+    border-radius: 5px;
+    color: #080808;
+    font-size: 20px;
+  }
+  nav ul li a:hover{
+  
+    padding: 5px 5px;
+    color:rgba(255, 165, 0, 1);
+    font-size: 20px;
+  }
+  a:hover,a.active{
+    background: none;
+    color:black;
+  }
+  #check:checked ~ ul{
+    left: 0;
+  }
+  .logo span{
+    font-size: 18px;
+   
+  }
+} 
+
+  
+  
+  
+  /* company service page */
+  
+  
+  
+  .company-img {
+    
+     background: cover;
+     width: 100%;
+     height:750px;
+    /* filter: blur(2px); */
+    background-size:cover ;
+    background-repeat: no-repeat;
+    background-image: url(../html/img/hr7.jpg);
+    /* backdrop-filter: blur(10px); */
+    
+  }
+  
+  .company-img::after {
+   content: '';
+   position: absolute;
+   top:0;
+   bottom:0;
+   width: 100%;
+   height: 100%;
+   background-color: rgba(7, 7, 7, 0.349);
+   
+  }
+  
+  .ourcompany{
+     width: 95%;
+     position: relative;
+     top:200px;
+     left: 40px;
+     z-index: 10;
+  }
+  
+  .ourcompany h1{
+    font-size: 60px;
+    color:rgba(20, 69, 242, 1);
+    font-size: 60px;
+    font-weight: bolder;
+    padding: 30px 10px;
+  }
+  
+  
+  
+  
+  
+  
+  .ourcompany h1 span{
+    padding: 30px 10px;
+    color:rgb(255, 255, 255) ;
+   
+  }
+  .ourcompany h1 span:hover{
+  
+  color:rgb(250, 248, 244);
+  
+  }
+
+  .ourcompany h2{
+     font-size: 40px;
+     font-weight: bold;
+     color: rgb(232, 240, 233);
+     /* text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25); */
+     padding: 10px 10px;
+  }
+  .ourcompany h2 span{
+     font-size: 40px;
+     font-weight: bold;
+     color:rgba(255, 165, 0, 1);
+     padding: 10px 10px;
+  }
+
+  .ourcompany p{
+    font-family: Kumar One;
+    font-size: 20px;
+    font-weight: 400;
+    color: rgb(255, 255, 255);
+    padding: 10px 10px;
+  }
+  
+  
+  .ourcompany  .btn{
+     position: relative;
+     top:50px;
+     
+     
+     
+  }
+  
+   .ourcompany  a{
+     font-size: 20px;
+     font-weight: 500;
+     border-radius: 10px;
+     border: 2px solid rgba(255, 165, 0, 1);
+     background-color: rgba(0, 0, 0, 0.64);
+     color: rgba(255, 165, 0, 1);
+     padding: 7px 7px;
+     margin: 0px 20px;
+  }
+  
+  .ourcompany  a:hover{
+  /* padding: 10px 12px; */
+  border: 2px solid rgba(20, 69, 242, 1);
+  color:rgba(20, 69, 242, 1);  
+  }
+  
+  .ourcompany .motive{
+   position: relative;
+   top:330px;
+  
+  }
+  .ourcompany .motive p{
+     /* border: 2px solid  rgba(255, 165, 0, 1); */
+     font-size: 40px;
+     font-weight: 500;
+     color: rgba(255, 165, 0, 1);
+     display: flex;
+     justify-content: center;
+     align-items: center;
+  }
+  .ourcompany .motive p:hover{
+  
+     color: rgba(20, 69, 242, 1);
+     
+  }
+
+/* over-view */
+.contents-overview{
+  width: 100%;
+}
+
+   .over-view{
+  padding: 20px 20px;
+ }
+ .over-view .view-1{
+  font-size: 48px;
+  color:rgba(255, 165, 0, 1);
+  font-weight: bold;
+}
+ .over-view .view{
+   font-size: 30px;
+   color: rgba(20, 69, 242, 1);
+   font-weight: bold;
+ }
+
+ .over-view .view p{
+  font-size: 20px;
+  color: rgb(0, 0, 0);
+  font-weight:500;
+}
+
+
+/* 
+.contents-overview{
+  position: relative;
+  top:-270px;
+} */
+   .over-view{
+  padding: 20px 20px;
+ }
+
+ .over-view .view{
+   font-size: 30px;
+   color: rgba(20, 69, 242, 1);
+   font-weight: bold;
+ }
+
+ .over-view .view p{
+  font-size: 20px;
+  color: rgb(0, 0, 0);
+  font-weight:500;
+}
+
+
+/* benefits */
+
+
+
+.Key-benefits{
+  padding: 20px 20px;
+ }
+
+.Key-benefits .benefit{
+  padding: 30px;
+  font-size: 48px;
+  color:rgba(255, 165, 0, 1);
+  font-weight:bold;
+ }
+ .Key-benefits .stream{
+  
+   font-size: 30px;
+   color: rgba(20, 69, 242, 1);
+   font-weight:bold;
+ }
+
+ .Key-benefits  .stream p{
+  font-size: 20px;
+  color: rgb(0, 0, 0);
+  font-weight:500;
+}
+
+/* content-hr */
+.contents-hr{
+display: flex;
+justify-content:center;
+}
+
+.contents-hr p{
+  padding: 20px 20px;
+  font-size: 20px;
+  color: rgb(0, 0, 0);
+  font-weight:500;
+}
+
+.rhyme{
+  padding: 50px;
+  display: flex;
+  justify-content:center;
+  align-items: center;
+}
+.contents-hr .rhyme p{
+  padding: 10px 20px;
+  font-size: 15px;
+  color: rgb(0, 0, 0);
+  font-weight:300;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
+  footer{
+    background: cover;
+    width: 100%;
+    height:370px;
+    background-size:cover ;
+    background-repeat: no-repeat;
+    /* background-image:black, url(footer.jpg); */
+  
+      position: relative;
+      top: 100px;
+  }
+  
+  .footer-img{
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      align-items: center;
+     
+  }
+  
+  .footer-img .top{
+     width:40%;
+     /* background-color: black; */
+     margin: 10px 20px;
+     
+    
+  }
+  
+  .footer-img .top ul{
+    display: inline-block;
+  
+   }
+  
+   .footer-img .top .inline h1,img{
+      display: inline-block;
+    
+     }
+     .footer-img .top .inline{
+     display: flex;
+     justify-content: end;
+     align-items: end;
+    
+     }
+     .footer-img  .icons{
+      display: flex;
+      justify-content: end;
+      align-items: end;
+     
+      }
+     .footer-img .top .inline h1{
+      font-size: 64px;
+      padding-bottom: 30px;
+    
+     }
+     .footer-img .top .inline h1 span{
+      color:rgba(255, 165, 0, 1);
+     }
+     /* .footer-img .top .foot {
+     padding: 10px 10px;
+    
+     } */
+     .footer-img .top .foot h1{
+      font-size: 24px;
+    
+     }
+   .footer-img .top .inline img{
+      background: cover;
+      width: 25vh;
+      height:25vh;   
+      border-radius: 90%;
+    
+     }
+     
+     .footer-img .top .icons a img{
+      margin: 20px 20px;
+      background: cover;
+      width: 5vh;
+      height:5vh;   
+      border-radius: 90%;
+    
+     }
+  
+     .footer-img .top .foot{
+     margin: 10px 5px;
+   
+    }
+     .footer-img .top .foot li{
+       padding: 10px 11px;
+    
+     }
+     
+     .footer-img .top .foot li a{
+      font-size: 20px;
+      color: black;
+      font-weight: 400;
+    }
+    .footer-img .top .foot li a:hover{
+      font-size: 20px;
+      color:rgba(20, 69, 242, 1);
+    }
+    footer .copy{
+    position: relative;
+    top:30px;
+    display: flex;
+    justify-content: center;
+    font-size: 20px;
+    font-weight: bolder;
+  
+    
+     }
